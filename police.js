@@ -17,7 +17,7 @@ browser.storage.local.get()
           .then((html) => {
             document.body.style.background = `url(${bg})`
             document.body.innerHTML = html
-            document.head.innerHTML = ''
+            document.head.innerHTML = '<title>Site Banned!</title>'
           })
       }
     },
