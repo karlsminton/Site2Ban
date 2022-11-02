@@ -4,14 +4,14 @@
   "version": "0.1.0",
   "description": "Experiment with browser extensions - track number of visits / time spent on sites which are defined in some sort of config.",
   "icons": {
-    "48": "icons/badge.png"
+    "48": "images/badge.png"
   },
   "permissions": [
     "activeTab",
     "storage"
   ],
   "browser_action": {
-    "default_icon": "icons/badge.png",
+    "default_icon": "images/badge.png",
     "default_title": "Browser Police",
     "default_popup": "partial/rule.html"
   },
