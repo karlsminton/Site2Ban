@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="rule.css"/>
+    </head>
+    <body>
+      <h1>Site2Ban</h1>
+      <!-- Form for banning current site -->
+        <div id="content">
+            <form id="settings" method="post" onsubmit="manage(event)">
+                <label for="police">
+                    <span>Police This Site</span>
+                    <input id="policed" type="checkbox" name="policed" value="1"/>
+                </label>
+                <input type="submit"></input>
+            </form>
+        </div>
+
+        <!-- Table of banned sites -->
+        <table id="sites">
+            <thead>
+                <th>Banned Sites</th>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <!-- Script for partial -->
+        <script src="rule.js"></script>
+    </body>
+</html>

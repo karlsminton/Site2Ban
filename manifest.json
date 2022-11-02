@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "Browser Police",
+  "version": "0.1.0",
+  "description": "Experiment with browser extensions - track number of visits / time spent on sites which are defined in some sort of config.",
+  "icons": {
+    "48": "icons/badge.png"
+  },
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "browser_action": {
+    "default_icon": "icons/badge.png",
+    "default_title": "Browser Police",
+    "default_popup": "partial/rule.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["police.js"]
+    }
+  ]
+}

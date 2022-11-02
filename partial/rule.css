@@ -1,0 +1,9 @@
+* {
+  font-family: Verdana, sans-serif;
+  text-align: left;
+}
+
+html, body {
+  width: 500px;
+  height: 200px
+}
